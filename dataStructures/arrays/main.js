@@ -5,7 +5,7 @@ const strings = ['a', 'b', 'c', 'd'];
 // computer already knows where things are stored
 strings[2];
 
-// push => add an item to the last item [O(1)/ O(n)]
+// push => add an item at the end of the list [O(1)/ O(n)]
 strings.push('e');
 
 // pop => delete the last item on the list [O(1)]
