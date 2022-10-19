@@ -138,3 +138,6 @@ const list = [1, 2, [3, 4, [5, 6]]];
 list.flat(Infinity); // [1, 2, 3, 4, 5, 6]
 list.flat(1); // [1, 2, 3, 4, [5, 6]]
 list.flat(2); // [1, 2, 3, 4, 5, 6]
+
+// reference
+// https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769
