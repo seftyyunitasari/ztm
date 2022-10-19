@@ -31,8 +31,21 @@ class HashTable {
         }
         return undefined
     }
+    
+    // collision is unconsidered
+    keys() {
+        const keysArray = [];
+        for (let i = 0; i < this.data.length; i++) {
+          if (this.data[i]) {
+            keysArray.push(this.data[i][0][0]);
+          }
+        }
+        return keysArray;
+      }
 }
 
-const myHashTable = new HashTable(2);
+const myHashTable = new HashTable(5);
 myHashTable.set('orange', 5000);
-console.log(myHashTable.get('orange'));
+myHashTable.set('apple', 10000);
+console.log(myHashTable);
+console.log(myHashTable.keys());
